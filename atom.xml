@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>边佳帅</title>
+  
+  <subtitle>边佳帅的个人博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-11-13T03:11:21.745Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>BianJiashuai</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一个程序</title>
+    <link href="http://yoursite.com/2019/11/13/hello-world/"/>
+    <id>http://yoursite.com/2019/11/13/hello-world/</id>
+    <published>2019-11-13T03:11:21.744Z</published>
+    <updated>2019-11-13T03:11:21.745Z</updated>
+    
+    <content type="html"><![CDATA[<p>恭喜你，进入第一个程序。</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><p>$ hexo server<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">More info: [Server](https://hexo.io/docs/server.html)</span><br><span class="line"></span><br><span class="line">### Generate static files</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;恭喜你，进入第一个程序。&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>新电脑测试页面</title>
+    <link href="http://yoursite.com/2019/11/13/%E6%96%B0%E7%94%B5%E8%84%91%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/"/>
+    <id>http://yoursite.com/2019/11/13/新电脑测试页面/</id>
+    <published>2019-11-13T02:58:01.000Z</published>
+    <updated>2019-11-13T03:16:41.547Z</updated>
+    
+    <content type="html"><![CDATA[<p>新电脑测试页面</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;新电脑测试页面&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://yoursite.com/2019/01/23/test/"/>
+    <id>http://yoursite.com/2019/01/23/test/</id>
+    <published>2019-01-23T05:05:20.000Z</published>
+    <updated>2019-11-13T02:46:16.235Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/welcome-cover3.jpg" alt="Image text"></p><p>这是测试页面</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/img/welcome-cover3.jpg&quot; alt=&quot;Image text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这是测试页面&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
