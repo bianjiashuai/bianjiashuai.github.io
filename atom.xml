@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-13T03:56:40.307Z</updated>
+  <updated>2019-11-15T06:39:49.108Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Node常用工具</title>
+    <link href="http://yoursite.com/2019/11/15/Node%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/11/15/Node常用操作/</id>
+    <published>2019-11-15T06:13:25.000Z</published>
+    <updated>2019-11-15T06:39:49.108Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Node版本管理工具-nvm"><a href="#Node版本管理工具-nvm" class="headerlink" title="Node版本管理工具 nvm"></a>Node版本管理工具 nvm</h2><h3 id="1、安装nvm"><a href="#1、安装nvm" class="headerlink" title="1、安装nvm"></a>1、安装nvm</h3><ul><li>如果已经单独安装了node，建议卸载。</li><li>直接进入安装包下载地址：<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fgithub.com%2Fcoreybutler%2Fnvm-windows%2Freleases" target="_blank" rel="noopener">https://github.com/coreybutler/nvm-windows/releases</a>，选择nvm-setup.zip，下载后直接安装。 </li><li>使用命令<code>nvm -v</code>检查是否安装成功</li></ul><h3 id="2、安装Node"><a href="#2、安装Node" class="headerlink" title="2、安装Node"></a>2、安装Node</h3><p>使用<code>nvm install &lt;version&gt; [&lt;arch&gt;]</code>命令下载需要的版本。arch参数表示系统位数，默认是64位，如果是32位操作系统，需要执行命令：nvm install 8.11.2 32</p><h3 id="3、Node版本管理"><a href="#3、Node版本管理" class="headerlink" title="3、Node版本管理"></a>3、Node版本管理</h3><ul><li><p><code>nvm nvm list</code> 是查找本电脑上所有的node版本</p><ul><li><code>nvm list</code> 查看已经安装的版本</li><li><code>nvm list installed</code> 查看已经安装的版本</li><li><code>nvm list available</code> 查看网络可以安装的版本</li></ul></li><li><p><code>nvm install</code> 安装最新版本nvm</p></li><li><p><code>nvm use &lt;version&gt;</code> 切换使用指定的版本node</p></li><li><p><code>nvm ls</code> 列出所有版本</p></li><li><p><code>nvm current</code> 显示当前版本</p></li><li><p><code>nvm alias &lt;name&gt; &lt;version&gt;</code>  给不同的版本号添加别名</p></li><li><p><code>nvm unalias &lt;name&gt;</code> 删除已定义的别名</p></li><li><p><code>nvm reinstall-packages &lt;version&gt;</code> 在当前版本node环境下，重新全局安装指定版本号的npm包</p></li><li><p><code>nvm on</code> 打开nodejs控制</p></li><li><p><code>nvm off</code> 关闭nodejs控制</p></li><li><p><code>nvm proxy</code> 查看设置与代理</p></li><li><p><code>nvm *_mirror [url]</code> 设置</p><ul><li><p><code>nvm node_mirror [url]</code> 设置或者查看setting.txt中的node_mirror，</p><p>如果不设置的默认是 <a href="https://nodejs.org/dist/" target="_blank" rel="noopener">https://nodejs.org/dist/</a></p></li><li><p><code>nvm npm_mirror [url]</code> 设置或者查看setting.txt中的npm_mirror，</p><p>如果不设置的话默认的是： <a href="https://github.com/npm/npm/archive/" target="_blank" rel="noopener">https://github.com/npm/npm/archive/</a>.</p></li></ul></li><li><p><code>nvm uninstall &lt;version&gt;</code> 卸载指定的版本</p></li><li><p><code>nvm use [version] [arch]</code> 切换指定的node版本和位数</p></li><li><p><code>nvm root [path]</code> 设置和查看root路径</p></li><li><p><code>nvm version</code> 查看当前的版本</p></li></ul><h2 id="Node镜像管理工具"><a href="#Node镜像管理工具" class="headerlink" title="Node镜像管理工具"></a>Node镜像管理工具</h2><h3 id="1、安装nrm"><a href="#1、安装nrm" class="headerlink" title="1、安装nrm"></a>1、安装nrm</h3><p>使用命令<code>npm install -g nrm</code>安装nrm</p><h3 id="2、Node镜像管理"><a href="#2、Node镜像管理" class="headerlink" title="2、Node镜像管理"></a>2、Node镜像管理</h3><ul><li><p><code>nrm ls</code>  列出所有镜像，如下：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">  npm -------- https://registry.npmjs.org/</span><br><span class="line">  yarn ------- https://registry.yarnpkg.com/</span><br><span class="line">  cnpm ------- http://r.cnpmjs.org/</span><br><span class="line">* taobao ----- https://registry.npm.taobao.org/</span><br><span class="line">  nj --------- https://registry.nodejitsu.com/</span><br><span class="line">  npmMirror -- https://skimdb.npmjs.com/registry/</span><br><span class="line">  edunpm ----- http://registry.enpmjs.org/</span><br></pre></td></tr></table></figure></li><li><p><code>nrm use &lt;name&gt;</code> name 表示镜像名称，如：nrm use taobao</p></li><li><p><code>nrm add name url</code>添加自定义的npm源，name 为自定义源名称 ，url为npm源链接</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Node版本管理工具-nvm&quot;&gt;&lt;a href=&quot;#Node版本管理工具-nvm&quot; class=&quot;headerlink&quot; title=&quot;Node版本管理工具 nvm&quot;&gt;&lt;/a&gt;Node版本管理工具 nvm&lt;/h2&gt;&lt;h3 id=&quot;1、安装nvm&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>第一个程序</title>
